@@ -1,0 +1,31 @@
+body {
+    font-family: Courier, monospace;
+    background-color: #708090;
+}
+
+h1 {
+  color: #eeeeee
+}
+
+p {
+  line-height: 25px;
+  color: #eeeeee;
+}
+
+table {
+  width: 75%;
+  border-collapse: collapse;
+  font-family: Courier, monospace;
+  font-size: 1.6em;
+  color: #2f2f31;
+  margin: 100px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td, th {
+  padding: 5px 10px 5px 10px;
+  border: solid 1px #eeeeee;
+}
