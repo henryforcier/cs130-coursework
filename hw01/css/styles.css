@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Colors
+#2f2f31 – Dark Charcoal
+#f8f8ff – Ghost White
+------------------------------------*/
+
+/* Values
+1. Balance
+2. Wisdom
+3. Boldness
+------------------------------------*/
+
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+/* Header
+------------------------------------*/
+header {
+  background: #f8f8ff;
+  padding: 15px;
+}
+header h1 {
+  text-transform: uppercase;
+  font-size: 1.6em;
+}
+header h2 {
+  font-style: italic;
+  font-size: 1.2em;
+}
+header p {
+  font-size: 0.8em;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    'icon space1 sub sub'
+    'space2 sum1 sum1 sum1'
+    'space2 sum2 sum2 sum2';
+  min-height: inherit;
+}
+.icon, .sub, .sum1, .sum2, .space1, .space2 {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+.icon {
+  grid-area: icon;
+  background: #2f2f31;
+  color: #f8f8ff;
+}
+.sub {
+  grid-area: sub;
+  background: #2f2f31;
+  color: #f8f8ff;
+}
+.sum1 {
+  grid-area: sum1;
+  font-size: 1.2em;
+  background: #2f2f31;
+  color: #f8f8ff;
+  line-height: 1.15em;
+}
+.sum2 {
+  grid-area: sum2;
+  font-size: 1.2em;
+  background: #2f2f31;
+  color: #f8f8ff;
+  line-height: 1.15em;
+}
+.space1 {
+  background: #e6e6fa;
+  grid-area: space1;
+}
+.space2 {
+  background: #e6e6fa;
+  grid-area: space2;
+}
+.uniform {
+  max-width: 50rem;
+}
+.header a {
+  color: #f8f8ff;
+}
+/* Projects
+------------------------------------*/
+.projects {
+  background: #2f2f31;
+  color: #f8f8ff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+.standard {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.projects h2 {
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.projects p {
+  padding: 10px;
+  font-size: 0.9em;
+  line-height: 1.15em;
+}
+.projects a {
+  color: #f8f8ff;
+}
+.projects h3 {
+  padding: 15px;
+  text-decoration: underline;
+}
+.projects img {
+  margin-top: 20px;
+}
+.project a {
+  font-style: oblique;
+  font-weight: bolder;
+}
+.project p {
+  max-width: 38rem;
+}
+/* Experience
+------------------------------------*/
+.experience {
+  background: #f8f8ff;
+  color: #2f2f31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+.experience h2 {
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.experience p {
+  padding: 5px;
+  font-size: 0.9em;
+  line-height: 1.15em;
+}
+.experience a {
+  color: #2f2f31;
+}
+.experience h3 {
+  padding: 15px;
+  text-decoration: underline;
+}
+.job {
+  padding: 0;
+  max-width: 38rem;
+}
+.job_head p {
+  font-size: 1em;
+  font-weight: bolder;
+  font-style: italic;
+}
+.job_body {
+  padding: 25px;
+  font-size: 1em;
+}
+.job_body p {
+  padding: 10px;
+}
+/* Education
+------------------------------------*/
+.education {
+  background: #2f2f31;
+  color: #f8f8ff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+.education h2 {
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.edu h3 {
+  padding: 10px;
+  font-size: 1.1em;
+  font-style: italic;
+}
+.edu p {
+  padding: 5px;
+  font-size: 1em;
+  font-style: normal;
+}
+/* Contact info
+------------------------------------*/
+.contact {
+  background: #e6e6fa;
+  color: #2f2f31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+.contact h2 {
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.contact li {
+  list-style: none;
+  margin-right: 50px;
+}
