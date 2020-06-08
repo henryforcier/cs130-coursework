@@ -1,0 +1,142 @@
+#general {
+  margin: 0;
+  background: #fff;
+  color: #111;
+}
+/* ^ */
+/* all background white, all text black */
+#outer_nav {
+  position: fixed;
+  height: 20vh;
+  width: 100vw;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 15vw auto auto;
+  grid-template-rows: 20vh;
+  grid-template-areas:
+    'left . right';
+}
+/* ^ */
+/* chunky nav bar fixed w direct nav elements */
+#outer_nav nav {
+  grid-area: right;
+  margin-top: 5vh;
+  text-align: end;
+  margin-right: 5vw;
+}
+#outer_nav nav a {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  color: #111;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.fa-paper-plane {
+  padding-left: 1em;
+}
+#outer_nav nav a:hover {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #96deae 50%);
+}
+#home {
+  grid-area: left;
+  text-align: left;
+  margin-left: 5vw;
+}
+#home:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+/* ^ */
+/* icons for direct nav home + elsewhere */
+
+#prev {
+  position: absolute;
+  top: 50vh;
+  left: 5vw;
+  font-size: 1.5em;
+}
+#next {
+  position: absolute;
+  top: 50vh;
+  right: 5vw;
+  font-size: 1.5em;
+}
+#prev:hover, #next:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.center {
+  position: absolute;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  top: 42vh;
+  left: 25vw;
+  width: 50vw;
+}
+.title {
+  position: absolute;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  top: 25vh;
+  left: 15vw;
+  width: 30vw;
+}
+.objective {
+  position: absolute;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  top: 35vh;
+  left: 15vw;
+  width: 30vw;
+}
+.result {
+  position: absolute;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  top: 55vh;
+  left: 15vw;
+  width: 30vw;
+}
+.exhibit {
+  position: absolute;
+  background: #ccc;
+  text-align: center;
+  opacity: 0.5;
+  top: 25vh;
+  left: 55vw;
+  height: 50vh;
+  width: 30vw;
+}
+/* ^ */
+/* slide content + arrow code */ 
+
+.passed {
+  position: relative;
+  left: -100vw;
+  width: 100vw;
+}
+.current {
+  position: relative;
+  left: 0px;
+  width: 100vw;
+}
+.next {
+  position: relative;
+  left: 100vw;
+  width: 100vw;
+}
+.slide {
+  transition: left 2s;
+}
+#slides {
+  transform-style: preserve-3d;
+}
